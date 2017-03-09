@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>creative-tim</title>
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <style>
     #home-img
     {
@@ -22,11 +22,77 @@
     #mynavigationbar a
     {
       color: white;
+      font-weight: bold;
     }
     .navbar-default a.navbar-brand
     {
       color: white;
     }
+    #home
+    {
+      position: relative;
+      height: 500px;
+    }
+    #home-img
+    {
+      width: 100%;
+      height: 100%;
+    }
+    #home .container
+    {
+      position: absolute;
+      top: 20%;
+      width:100%;
+    }
+    #home h1
+    {
+      font-family: 'PT Sans Narrow', sans-serif;
+      color: white;
+      font-size: 800%;
+      letter-spacing: 50px;
+    }
+    .line-first
+    {
+      width: 50%;
+      border: 2px solid white;
+      margin-left: 50%;
+    }
+    .line-third
+    {
+      border: 2px solid white;
+      width: 2%;
+      margin-left: 50%;
+    }
+    .line-second
+    {
+      width: 50%;
+      border: 2px solid white;
+      margin-right:60%;
+    }
+    .scroll-icon
+    {
+      margin-top: 200px;
+    }
+    .scroll-icon a
+    {
+      font-size: 30px;
+      color: white;
+      border: 1px solid white;
+      padding: 12px 10px 5px 12px;
+      border-radius: 50%;
+    }
+    .heading h2
+    {
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+   section
+  {
+    min-height: 600px;
+  }
+
     </style>
   </head>
   <body>
@@ -54,10 +120,64 @@
 
     <section id="home">
       <img id="home-img" src="C:/Users/User/Desktop/myprojects/bootstrap_project/assets/img/home-img.jpg">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center">CREATIVE TIM</h1>
+          <div class="col-md-5">
+            <hr class="line-first">
+          </div>
+          <div class="col-md-2">
+            <hr class="line-third">
+          </div>
+          <div class="col-md-5">
+            <hr class="line-second">
+          </div>
+          <div class="heading">
+            <h2 class="text-center">Awesome Bootstrap freebies and templates to build better websites</h2>
+          </div>
+        </div>
+        <div class="scroll-icon text-center">
+          <a href="#">
+        <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+      </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center">About us</h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="whatwedo">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center">What We Do</h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center">Team</h1>
+        </div>
+      </div>
+    </select>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center">Contact us</h1>
+        </div>
+      </div>
     </section>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.js"></script>
